@@ -2,7 +2,7 @@ class Oio < Formula
   desc "CLI for managing notes and ephemeral shorts with authenticated access"
   homepage "https://github.com/sim4gh/oio-cli"
   url "https://github.com/sim4gh/oio-cli/archive/refs/tags/v1.0.0.tar.gz"
-  sha256 "0019dfc4b32d63c1392aa264aed2253c1e0c2fb09216f8e2cc269bbfb8bb49b5"
+  sha256 "eb69c6b7d98c90c4ad1d34698522ad353e80b4dc0bc20ef65d199ad28059ac0d"
   license "ISC"
 
   depends_on "node"
