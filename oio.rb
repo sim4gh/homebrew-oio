@@ -1,8 +1,8 @@
 class Oio < Formula
   desc "CLI for managing notes and ephemeral shorts with authenticated access"
   homepage "https://github.com/sim4gh/oio-cli"
-  url "https://github.com/sim4gh/oio-cli/archive/refs/tags/v1.0.2.tar.gz"
-  sha256 "790899ddb644c210a763c1c242b8ec4250ebcef597db34a86cc7d35cb4d74dbd"
+  url "https://github.com/sim4gh/oio-cli/archive/refs/tags/v1.1.0.tar.gz"
+  sha256 "d87d3f601fcae4c5e284434144e7aafe5c4d9e5fc7ff08d5e002fb43f82ccf06"
   license "ISC"
 
   depends_on "node"
@@ -19,6 +19,6 @@ class Oio < Formula
   end
 
   test do
-    assert_match "1.0.2", shell_output("#{bin}/oio --version")
+    assert_match "1.1.0", shell_output("#{bin}/oio --version")
   end
 end
