@@ -5,23 +5,23 @@
 class Oio < Formula
   desc "Fast CLI for ephemeral content management"
   homepage "https://github.com/sim4gh/oio-go"
-  version "2.0.0"
+  version "2.1.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/sim4gh/oio-go/releases/download/v2.0.0/oio-go_2.0.0_darwin_amd64.tar.gz"
-      sha256 "5ddf4cf8720f18fdc27e87cc287e7e75bd474c548b7af3553d60dd0df79e64c4"
+      url "https://github.com/sim4gh/oio-go/releases/download/v2.1.0/oio-go_2.1.0_darwin_amd64.tar.gz"
+      sha256 "7366b565626d436e44dca9aefafbb61c78ab872ccd9c97cd44fb1e7eff3c54f5"
 
-      def install
+      define_method(:install) do
         bin.install "oio"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/sim4gh/oio-go/releases/download/v2.0.0/oio-go_2.0.0_darwin_arm64.tar.gz"
-      sha256 "29ffc2c14c6ac8cd6b7dc9d18a90dd020461881357a9108fe1ec658600d461c1"
+      url "https://github.com/sim4gh/oio-go/releases/download/v2.1.0/oio-go_2.1.0_darwin_arm64.tar.gz"
+      sha256 "ef86a1cbfc7ec50f1c1b605a5f52770fb3bc43a9b9dc393e83ed44df33822fd7"
 
-      def install
+      define_method(:install) do
         bin.install "oio"
       end
     end
@@ -29,16 +29,16 @@ class Oio < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/sim4gh/oio-go/releases/download/v2.0.0/oio-go_2.0.0_linux_amd64.tar.gz"
-      sha256 "fdda44f2ee601e2708ba354166371ca5ee99e81e8c46ac3b05c4e15b050b1e02"
-      def install
+      url "https://github.com/sim4gh/oio-go/releases/download/v2.1.0/oio-go_2.1.0_linux_amd64.tar.gz"
+      sha256 "ae84805540224a83d9a50875c7906f6b7bd4c8ed84c9a579137b48e8df548802"
+      define_method(:install) do
         bin.install "oio"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/sim4gh/oio-go/releases/download/v2.0.0/oio-go_2.0.0_linux_arm64.tar.gz"
-      sha256 "fdd86c2a8ae83b537674eaafe6a5df7b91816c649257bc48056d941a2a40fa5e"
-      def install
+      url "https://github.com/sim4gh/oio-go/releases/download/v2.1.0/oio-go_2.1.0_linux_arm64.tar.gz"
+      sha256 "01d926663202ab92ddb32c1047272b2856ec3851002f8cdef2e9c7d1050bab3f"
+      define_method(:install) do
         bin.install "oio"
       end
     end
