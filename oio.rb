@@ -5,21 +5,21 @@
 class Oio < Formula
   desc "Fast CLI for ephemeral content management"
   homepage "https://github.com/sim4gh/oio-go"
-  version "2.5.0"
+  version "2.5.1"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/sim4gh/oio-go/releases/download/v2.5.0/oio-go_2.5.0_darwin_amd64.tar.gz"
-      sha256 "417754ab7890defca9135bb01de98b81a839a417d10e8c665264b9c1c3548bb9"
+      url "https://github.com/sim4gh/oio-go/releases/download/v2.5.1/oio-go_2.5.1_darwin_amd64.tar.gz"
+      sha256 "831a6e1ada9ec4182675250e55f45d74a952d19e481ea0142caf6d7745e087db"
 
       define_method(:install) do
         bin.install "oio"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/sim4gh/oio-go/releases/download/v2.5.0/oio-go_2.5.0_darwin_arm64.tar.gz"
-      sha256 "d90555b56f9fa0785102edf7a00feaa3b39a81f72810fc82a867276e129a1b2a"
+      url "https://github.com/sim4gh/oio-go/releases/download/v2.5.1/oio-go_2.5.1_darwin_arm64.tar.gz"
+      sha256 "162b40d76f33f76ee55e6c765bc35e140fa442fc3935c5e3f0299acfc9d90b2b"
 
       define_method(:install) do
         bin.install "oio"
@@ -29,15 +29,15 @@ class Oio < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/sim4gh/oio-go/releases/download/v2.5.0/oio-go_2.5.0_linux_amd64.tar.gz"
-      sha256 "572e42a3f24bdf69fbdc1da7e642f1026b54aeda44afffbae3ddc4f89ecce1db"
+      url "https://github.com/sim4gh/oio-go/releases/download/v2.5.1/oio-go_2.5.1_linux_amd64.tar.gz"
+      sha256 "b6059b5237f0edd8d18bc86338ecacc2fc73474351d5b5c4e213dc97dd554898"
       define_method(:install) do
         bin.install "oio"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/sim4gh/oio-go/releases/download/v2.5.0/oio-go_2.5.0_linux_arm64.tar.gz"
-      sha256 "b87613e823bda5d07c919c2f8ea8d260a782bdb12935d535f05e72cfd4c63d60"
+      url "https://github.com/sim4gh/oio-go/releases/download/v2.5.1/oio-go_2.5.1_linux_arm64.tar.gz"
+      sha256 "913e017fa7553f8a0c607f0f7a8c8fe6b0e67fa40a90f549c9877df62f2a529d"
       define_method(:install) do
         bin.install "oio"
       end
